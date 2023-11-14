@@ -1,0 +1,541 @@
+* {
+  padding: 0;
+  margin: 0;
+  /* width: 100%;
+            height: 100%; */
+  /* border: 1px solid; */
+  outline: none;
+}
+
+i {
+  font-size: -11px;
+  cursor: pointer;
+}
+button {
+  color: white;
+  background-color: #008000b8;
+  border-radius: 9px;
+  border: none;
+  gap: 10pc;
+  display: flex;
+
+  padding: 12px;
+  align-content: center;
+}
+button a {
+  text-decoration: none;
+}
+button:hover {
+  color: #008000b8;
+  background: #ffffffb8;
+  border-radius: 9px;
+  border: 1px solid;
+  /* box-shadow: 0px 0px 6px 1px #008000; */
+  gap: 10pc;
+  display: flex;
+  padding: 12px;
+  align-content: center;
+}
+
+body {
+  padding: 30px;
+  /* color: rgba(193, 205, 215, 0); */
+  background: #fafafa;
+}
+nav {
+  display: flex;
+
+  justify-content: space-around;
+
+  align-items: center;
+}
+nav .logo {
+  display: flex;
+  align-items: center;
+  gap: 1pc;
+}
+nav .logo img.img1 {
+  height: 35px;
+  width: 35px;
+}
+nav .logo h1 {
+  font-family: "Sofia", sans-serif;
+}
+nav .logo img.img2 {
+  width: 9pc;
+}
+nav ui button {
+  outline: none;
+  padding: 10px;
+}
+/* ====================container==================== */
+.container {
+  padding-top: 2pc;
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.container .section_No1 {
+  border-radius: 3px;
+  /* border: 1px solid gray; */
+  background: white;
+  /* padding: 10px; */
+  box-shadow: 0px 0px 6px 1px gray;
+}
+
+.post {
+  width: min-content;
+  box-shadow: 1px 1px 26px -14px gray;
+  margin: 10px;
+  border: 1.4px solid gray;
+  /* padding: 10px; */
+  /* display: inline; */
+}
+
+.post .top {
+  font-family: "Mochiy Pop One", sans-serif;
+  padding: 9px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.post .top .porfile {
+  display: flex;
+  gap: 7px;
+  align-items: center;
+}
+
+.post .top .porfile img {
+  width: 25px;
+  height: 25px;
+  /* align-self: center; */
+  object-fit: contain;
+  /* object-fit: cover; */
+  border-radius: 50%;
+}
+
+.post .top .porfile .porfileName {
+  display: flex;
+  flex-direction: column;
+  /* align-items: center; */
+  font-size: 11px;
+  justify-content: center;
+}
+
+.post .top .porfile .porfileName p {
+  font-weight: bold;
+}
+
+.post .top .porfile .porfileName span {
+  color: rgba(81, 82, 82, 0.799);
+}
+.post .top .icon i svg {
+  transform: rotate(90deg);
+}
+
+.post .center img {
+  width: 18pc;
+  height: 250px;
+  overflow: hidden;
+  object-fit: cover;
+}
+
+.post .bottom {
+  font-family: "Mochiy Pop One", sans-serif;
+  padding: 5px;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  font-size: 12px;
+}
+
+.post .bottom .icon_bottom {
+  display: flex;
+  justify-content: space-between;
+  /* padding: 5px; */
+}
+
+.post .bottom .likes p {
+  font-family: "Trirong", serif;
+  font-family: "Roboto", sans-serif;
+  /* font-family: 'Mochiy Pop One', sans-serif; */
+  font-weight: 700;
+  font-size: 12px;
+}
+
+.post .bottom .discription {
+  display: flex;
+}
+
+.post .bottom .discription .discription_name {
+  font-family: "Playpen Sans", sans-serif;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.post .bottom .discription .discription_name p {
+  font-family: "Mochiy Pop One", sans-serif;
+  font-weight: 700;
+  /* display: flex; */
+}
+
+.post .bottom .discription .discription_name span {
+  font-family: "Mochiy Pop One", sans-serif;
+  display: flex;
+}
+
+.post .bottom .discription .discription_name a {
+  color: rgba(0, 166, 255, 0.604);
+  display: flex;
+}
+
+.post .bottom .Comment .Comment_View span {
+  font-family: "Roboto", sans-serif;
+  color: gray;
+}
+
+.post .bottom .Comment .Comment_1 {
+  display: flex;
+  justify-content: space-between;
+}
+
+.post .bottom .Comment .Comment_1 .Comment_1_name {
+  display: flex;
+  gap: 5px;
+  flex-wrap: wrap;
+}
+
+.post .bottom .Comment .Comment_1 .Comment_1_name p {
+  font-weight: bold;
+}
+
+.post .bottom .Comment .Comment_2 {
+  display: flex;
+  justify-content: space-between;
+}
+
+.post .bottom .Comment .Comment_2 .Comment_2_name {
+  display: flex;
+  gap: 5px;
+}
+
+.post .bottom .Comment .Comment_2 .Comment_2_name p {
+  font-weight: 700;
+}
+
+.post .bottom .timesec {
+  gap: 0.2pc;
+  display: flex;
+  font-family: "Roboto", sans-serif;
+}
+
+.post .bottom .timesec p {
+  color: gray;
+}
+
+.post .bottom .timesec span {
+  color: gray;
+}
+section .btn a {
+  text-decoration: none;
+}
+
+.container .section_No2 {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.container .section_No2 .PostBody {
+  display: flex;
+  gap: 1rem;
+  flex-direction: column;
+}
+
+.container .section_No2 .PostBody h1 {
+  font-size: 25px;
+  font-family: "Audiowide", sans-serif;
+}
+
+.container .section_No2 .PostBody .input_No1_main {
+  display: flex;
+  gap: 1rem;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.container .section_No2 .PostBody .input_No1_main .input_No1 {
+  /* border: 1px solid gray; */
+  padding: 6px;
+  width: 13pc;
+  background: white;
+  box-shadow: 0px 0px 6px 1px gray;
+  border-radius: 5px;
+}
+
+.container .section_No2 .PostBody .input_No1_main .input_No1 p {
+  color: gray;
+  font-family: "Sofia", sans-serif;
+  font-size: 12px;
+}
+
+.container .section_No2 .PostBody .input_No1 input {
+  border: none;
+  font-family: "Trirong", serif;
+}
+
+.container .section_No2 .PostBody .input_No2 {
+  /* width: 29pc; */
+  /* border: 1px solid; */
+  padding: 6px;
+  background: white;
+  box-shadow: 0px 0px 6px 1px gray;
+  border-radius: 5px;
+  flex-direction: column;
+  display: flex;
+  justify-content: space-between;
+}
+
+.container .section_No2 .PostBody .input_No2 p {
+  color: gray;
+  font-size: 12px;
+}
+
+.container .section_No2 .PostBody .input_No2 input {
+  border: none;
+  font-family: "Trirong", serif;
+  width: auto;
+}
+
+.container .section_No2 .Stats_States {
+  display: flex;
+  flex-direction: column;
+  gap: 1pc;
+}
+.container .section_No2 .Stats_States h1 {
+  font-size: 25px;
+  font-family: "Audiowide", sans-serif;
+}
+
+.container .section_No2 .Stats_States .input_No1 {
+  display: flex;
+  gap: 2pc;
+  flex-wrap: wrap;
+}
+
+.container .section_No2 .Stats_States .input_No1 .imageCount {
+  /* border: 1px solid gray; */
+  padding: 6px;
+  width: 7pc;
+  box-shadow: 0px 0px 6px 1px gray;
+  background: white;
+  /* display: flex; */
+  /* gap: 0pc; */
+  border-radius: 5px;
+}
+
+.container .section_No2 .Stats_States .input_No1 .imageCount p {
+  color: gray;
+  font-family: "Sofia", sans-serif;
+  font-size: 12px;
+}
+
+.container .section_No2 .Stats_States .input_No1 .imageCount select {
+  border: none;
+  display: flex;
+  justify-content: space-between;
+}
+
+.container .section_No2 .Stats_States .input_No1 .LikesCount {
+  /* border: 1px solid gray; */
+  padding: 6px;
+  width: 7pc;
+  /* display: flex; */
+  background: white;
+  /* gap: 0pc; */
+  border-radius: 5px;
+  overflow: hidden;
+  box-shadow: 0px 0px 6px 1px gray;
+}
+
+.container .section_No2 .Stats_States .input_No1 .LikesCount p {
+  color: gray;
+  font-size: 12px;
+  font-family: "Sofia", sans-serif;
+}
+
+.container .section_No2 .Stats_States .input_No1 .LikesCount input {
+  border: none;
+  font-family: "Trirong", serif;
+  width: min-content;
+}
+
+.container .section_No2 .Stats_States .input_No1 .CommentCount {
+  /* border: 1px solid gray; */
+  padding: 6px;
+  background: white;
+  width: 7pc;
+  /* display: flex; */
+  /* gap: 0pc; */
+  overflow: hidden;
+  box-shadow: 0px 0px 6px 1px gray;
+  border-radius: 5px;
+}
+
+.container .section_No2 .Stats_States .input_No1 .CommentCount p {
+  color: gray;
+  font-size: 12px;
+  font-family: "Sofia", sans-serif;
+}
+
+.container .section_No2 .Stats_States .input_No1 .CommentCount input {
+  border: none;
+  font-family: "Trirong", serif;
+  width: min-content;
+}
+
+.container .section_No2 .Stats_States .input_No2 .input_No2_main {
+  display: flex;
+  gap: 10px;
+  flex-direction: column;
+}
+
+.container .section_No2 .Stats_States .input_No2 .input_No2_main div {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+
+/* ====================container==================== */
+
+/* ====================comments==================== */
+.comments {
+  display: flex;
+  gap: 1rem;
+  flex-direction: column;
+  padding-top: 1pc;
+}
+
+.Comment {
+  flex-wrap: wrap;
+  gap: 0.5pc;
+  display: flex;
+  flex-direction: column;
+}
+
+.comments h1 {
+  font-family: "Audiowide", sans-serif;
+  font-size: 25px;
+}
+
+.comments .commentsMAIN {
+  display: flex;
+  gap: 1pc;
+  flex-wrap: wrap;
+}
+
+.comments .commentsMAIN .commentsINput_1 {
+  width: 20pc;
+  /* border: 1px solid; */
+  background: white;
+  padding: 6px;
+  border-radius: 5px;
+  box-shadow: 0px 0px 6px 1px gray;
+  display: flex;
+  /* justify-content: space-between; */
+  flex-direction: column;
+}
+
+.comments .commentsMAIN .commentsINput_1 p {
+  color: gray;
+  font-size: 12px;
+  font-family: "Sofia", sans-serif;
+}
+
+.comments .commentsMAIN .commentsINput_1 input {
+  border: none;
+  font-family: "Trirong", serif;
+  font-family: "Trirong", serif;
+}
+
+.comments .commentsMAIN .commentsINput_2 {
+  width: 45pc;
+  box-shadow: 0px 0px 6px 1px gray;
+  /* border: 1px solid; */
+  padding: 6px;
+  background: white;
+  border-radius: 5px;
+  display: flex;
+  /* justify-content: space-between; */
+  flex-direction: column;
+}
+
+.comments .commentsMAIN .commentsINput_2 p {
+  color: gray;
+  font-family: "Sofia", sans-serif;
+  font-size: 12px;
+}
+
+.comments .commentsMAIN .commentsINput_2 input {
+  border: none;
+  /* font-family: "Trirong", serif; */
+  font-family: "Trirong", serif;
+}
+
+/* ====================comments==================== */
+/* ====================Post Time==================== */
+.Time {
+  font-family: "Audiowide", sans-serif;
+  padding-bottom: 1pc;
+  padding-top: 1pc;
+  gap: 1pc;
+  display: flex;
+  flex-direction: column;
+}
+
+.Time .TimeInput {
+  width: 10pc;
+  background: white;
+  /* border: 1px solid; */
+  padding: 6px;
+  box-shadow: 0px 0px 6px 1px gray;
+  border-radius: 5px;
+  display: flex;
+  /* justify-content: space-between; */
+  flex-direction: column;
+}
+
+.Time .TimeInput p {
+  color: gray;
+  font-size: 12px;
+  font-family: "Sofia", sans-serif;
+}
+
+.Time .TimeInput input {
+  border: none;
+  font-family: "Trirong", serif;
+}
+
+/* ====================Post Time==================== */
+
+@media (max-width: 320px) {
+  body {
+    padding: 5px;
+  }
+  .post {
+    margin: 5px;
+  }
+}
+
+@media (max-width: 300px) {
+  nav {
+    flex-direction: column;
+    gap: 1pc;
+  }
+  .post .center img {
+    width: 14pc;
+  }
+}

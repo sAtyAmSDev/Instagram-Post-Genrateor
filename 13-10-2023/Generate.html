@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Instagram Post Genrate</title>
+  <!-- <link rel="stylesheet" href="./style/style.css" /> -->
+  <link rel="stylesheet" href="./style/Generate.css" />
+  <link rel="stylesheet" href="script.js" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Mochiy+Pop+One&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <!-- ==============================NAV============================== -->
+  <nav>
+    <div class="logo">
+      <img class="img1"
+        src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/Instagram_logo_2022.svg/600px-Instagram_logo_2022.svg.png"
+        alt="" data-csiid="8" data-atf="1">
+      <img class="img2" src="instagram.png" alt="">
+    </div>
+
+      <button><a href="login.html">Login</a></button>
+  </nav>
+  <!-- ==============================NAV============================== -->
+
+  <!-- ==============================container============================== -->
+  <div class="container">
+    <div class="section_No1">
+      <div class="post">
+        <div class="top" id="top">
+          <div class="porfile">
+            <img src="./img/logo.png" alt="" />
+            <div class="porfileName">
+              <p>Satyam shinde</p>
+              <span>pune 12va mail lonikand </span>
+            </div>
+          </div>
+          <div class="icon">
+            <i>
+              <svg aria-label="More options" color="#262626" fill="#262626" height="24" role="img" viewBox="0 0 24 24"
+                width="24">
+                <circle cx="12" cy="12" r="1.5"></circle>
+                <circle cx="6.5" cy="12" r="1.5"></circle>
+                <circle cx="17.5" cy="12" r="1.5"></circle>
+              </svg>
+            </i>
+          </div>
+        </div>
+        <div class="center" id="centerImg">
+          <img
+            src="data:image/jpeg;base64,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"
+            alt="" />
+        </div>
+        <div class="bottom">
+          <div class="icon_bottom">
+            <div class="icon_bottom_No1">
+              <i>
+                <svg aria-label="Like" color="#262626" fill="#262626" height="24" role="img" viewBox="0 0 48 48"
+                  width="24">
+                  <path
+                    d="M34.6 6.1c5.7 0 10.4 5.2 10.4 11.5 0 6.8-5.9 11-11.5 16S25 41.3 24 41.9c-1.1-.7-4.7-4-9.5-8.3-5.7-5-11.5-9.2-11.5-16C3 11.3 7.7 6.1 13.4 6.1c4.2 0 6.5 2 8.1 4.3 1.9 2.6 2.2 3.9 2.5 3.9.3 0 .6-1.3 2.5-3.9 1.6-2.3 3.9-4.3 8.1-4.3m0-3c-4.5 0-7.9 1.8-10.6 5.6-2.7-3.7-6.1-5.5-10.6-5.5C6 3.1 0 9.6 0 17.6c0 7.3 5.4 12 10.6 16.5.6.5 1.3 1.1 1.9 1.7l2.3 2c4.4 3.9 6.6 5.9 7.6 6.5.5.3 1.1.5 1.6.5.6 0 1.1-.2 1.6-.5 1-.6 2.8-2.2 7.8-6.8l2-1.8c.7-.6 1.3-1.2 2-1.7C42.7 29.6 48 25 48 17.6c0-8-6-14.5-13.4-14.5z">
+                  </path>
+                </svg>
+              </i>
+              <i>
+                <svg aria-label="Comment" color="#262626" fill="#262626" height="24" role="img" viewBox="0 0 48 48"
+                  width="24">
+                  <path clip-rule="evenodd"
+                    d="M47.5 46.1l-2.8-11c1.8-3.3 2.8-7.1 2.8-11.1C47.5 11 37 .5 24 .5S.5 11 .5 24 11 47.5 24 47.5c4 0 7.8-1 11.1-2.8l11 2.8c.8.2 1.6-.6 1.4-1.4zm-3-22.1c0 4-1 7-2.6 10-.2.4-.3.9-.2 1.4l2.1 8.4-8.3-2.1c-.5-.1-1-.1-1.4.2-1.8 1-5.2 2.6-10 2.6-11.4 0-20.6-9.2-20.6-20.5S12.7 3.5 24 3.5 44.5 12.7 44.5 24z"
+                    fill-rule="evenodd"></path>
+                </svg>
+              </i>
+              <i>
+                <svg aria-label="Share Post" color="#262626" fill="#262626" height="24" role="img" viewBox="0 0 48 48"
+                  width="24">
+                  <path
+                    d="M47.8 3.8c-.3-.5-.8-.8-1.3-.8h-45C.9 3.1.3 3.5.1 4S0 5.2.4 5.7l15.9 15.6 5.5 22.6c.1.6.6 1 1.2 1.1h.2c.5 0 1-.3 1.3-.7l23.2-39c.4-.4.4-1 .1-1.5zM5.2 6.1h35.5L18 18.7 5.2 6.1zm18.7 33.6l-4.4-18.4L42.4 8.6 23.9 39.7z">
+                  </path>
+                </svg>
+              </i>
+            </div>
+            <i>
+              <svg aria-label="Save" color="#262626" fill="#262626" height="24" role="img" viewBox="0 0 48 48"
+                width="24">
+                <path
+                  d="M43.5 48c-.4 0-.8-.2-1.1-.4L24 29 5.6 47.6c-.4.4-1.1.6-1.6.3-.6-.2-1-.8-1-1.4v-45C3 .7 3.7 0 4.5 0h39c.8 0 1.5.7 1.5 1.5v45c0 .6-.4 1.2-.9 1.4-.2.1-.4.1-.6.1zM24 26c.8 0 1.6.3 2.2.9l15.8 16V3H6v39.9l15.8-16c.6-.6 1.4-.9 2.2-.9z">
+                </path>
+              </svg>
+            </i>
+          </div>
+          <div class="likes" style="display: flex; gap: 5px;">
+            <p> <span>1,234 </span> likes</p>
+          </div>
+          <div class="discription">
+            <div class="discription_name">
+
+              <p>Satyam</p>
+              <span> This is a sample post text </span>
+              <span><a>@mentions, </a><a>#hashtags, </a><a>https://links.com </a></span>
+
+
+              <span> are all aotomatically converted </span>
+            </div>
+          </div>
+          <div class="Comment">
+            <div class="Comment_View" style="display: flex;">
+              <span style="display: flex; gap: 4px;">View all <p>1,234 </p>comment</span>
+            </div>
+            <div class="Comment_1">
+              <div class="Comment_1_name">
+                <p>Satyam</p>
+                <span> I liked post Kunal . Thanks for sharing</span>
+              </div>
+              <i>
+                <svg aria-label="Like" color="#262626" fill="#262626" height="10" role="img" viewBox="0 0 48 48"
+                  width="10">
+                  <path
+                    d="M34.6 6.1c5.7 0 10.4 5.2 10.4 11.5 0 6.8-5.9 11-11.5 16S25 41.3 24 41.9c-1.1-.7-4.7-4-9.5-8.3-5.7-5-11.5-9.2-11.5-16C3 11.3 7.7 6.1 13.4 6.1c4.2 0 6.5 2 8.1 4.3 1.9 2.6 2.2 3.9 2.5 3.9.3 0 .6-1.3 2.5-3.9 1.6-2.3 3.9-4.3 8.1-4.3m0-3c-4.5 0-7.9 1.8-10.6 5.6-2.7-3.7-6.1-5.5-10.6-5.5C6 3.1 0 9.6 0 17.6c0 7.3 5.4 12 10.6 16.5.6.5 1.3 1.1 1.9 1.7l2.3 2c4.4 3.9 6.6 5.9 7.6 6.5.5.3 1.1.5 1.6.5.6 0 1.1-.2 1.6-.5 1-.6 2.8-2.2 7.8-6.8l2-1.8c.7-.6 1.3-1.2 2-1.7C42.7 29.6 48 25 48 17.6c0-8-6-14.5-13.4-14.5z">
+                  </path>
+                </svg>
+              </i>
+            </div>
+            <div class="Comment_2">
+              <div class="Comment_2_name">
+                <p>Satyam</p>
+                <span>hsjsjdjskjdj</span>
+              </div>
+              <i>
+                <svg aria-label="Like" color="#262626" fill="#262626" height="10" role="img" viewBox="0 0 48 48"
+                  width="10">
+                  <path
+                    d="M34.6 6.1c5.7 0 10.4 5.2 10.4 11.5 0 6.8-5.9 11-11.5 16S25 41.3 24 41.9c-1.1-.7-4.7-4-9.5-8.3-5.7-5-11.5-9.2-11.5-16C3 11.3 7.7 6.1 13.4 6.1c4.2 0 6.5 2 8.1 4.3 1.9 2.6 2.2 3.9 2.5 3.9.3 0 .6-1.3 2.5-3.9 1.6-2.3 3.9-4.3 8.1-4.3m0-3c-4.5 0-7.9 1.8-10.6 5.6-2.7-3.7-6.1-5.5-10.6-5.5C6 3.1 0 9.6 0 17.6c0 7.3 5.4 12 10.6 16.5.6.5 1.3 1.1 1.9 1.7l2.3 2c4.4 3.9 6.6 5.9 7.6 6.5.5.3 1.1.5 1.6.5.6 0 1.1-.2 1.6-.5 1-.6 2.8-2.2 7.8-6.8l2-1.8c.7-.6 1.3-1.2 2-1.7C42.7 29.6 48 25 48 17.6c0-8-6-14.5-13.4-14.5z">
+                  </path>
+                </svg>
+              </i>
+            </div>
+          </div>
+          <div class="timesec">
+            <p>23</p>
+            <span> SECONDS AGO</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="section_No2">
+      <div class="PostBody">
+        <h1>Post Body</h1>
+        <div class="input_No1_main">
+          <div class="input_No1">
+            <div>
+              <p>Avatar</p>
+              <input id="file1" type="file" placeholder="Click to upload" />
+            </div>
+          </div>
+          <div class="input_No1">
+            <div>
+              <p>Avatar</p>
+              <input id="file2" type="file" placeholder="Click to upload" />
+            </div>
+          </div>
+        </div>
+        <!-- =============================================================== -->
+        <div class="input_No2">
+          <p>Username</p>
+          <div class="input">
+            <input id="Username" type="text" placeholder="Satyam" />
+            <!-- <button>Verified</button> -->
+
+          </div>
+        </div>
+        <!-- =============================================================== -->
+        <div class="input_No1_main">
+          <div class="input_No1">
+            <div>
+              <p>Description</p>
+              <input id="DesIinput" type="text" placeholder="pune 12va mail lonikand " />
+            </div>
+          </div>
+          <div class="input_No1">
+            <div>
+              <p>Post Date</p>
+              <input type="text" placeholder="October 16, 2023 12:00 AM" />
+            </div>
+          </div>
+        </div>
+
+        <div class="input_No2">
+          <p>Post tText (max. 120 characters will be see)</p>
+          <input id="DescriptionOnPost" type="text" placeholder=" discription " />
+
+        </div>
+      </div>
+
+      <div class="Stats_States">
+        <h1>Stats & States</h1>
+        <div class="input_No1">
+          <div class="imageCount">
+            <p>Image Count</p>
+            <select name="select" id="">
+              <option value=" text">1</option>
+              <option value="text">2</option>
+              <option value="text">3</option>
+              <option value="text">4</option>
+            </select>
+          </div>
+
+          <div class="LikesCount">
+            <p>Likes Count</p>
+            <input id="LikesCount" type="text" placeholder="1234" />
+          </div>
+          <div class="CommentCount">
+            <p>Comment Count</p>
+            <input id="CommentCount" type="text" placeholder="1234" />
+          </div>
+        </div>
+        <div class="input_No2">
+          <div class="input_No2_main">
+            <div>
+              <input id="postlike" type="checkbox" />
+              <p>is post liked by viewer?</p>
+            </div>
+            <div>
+              <input type="checkbox" />
+              <p>is someone tagged?</p>
+            </div>
+            <div>
+              <input type="checkbox" />
+              <p>Has an instagram story?</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- ==============================container============================== -->
+
+  <!-- ==============================comments============================== -->
+  <div class="comments">
+    <h1>Comments</h1>
+    <div class="commentsMAIN">
+      <div class="commentsINput_1">
+        <p>First Comment Username</p>
+        <input id="FirstCommentUsername" type="text" placeholder="Satyam" />
+      </div>
+      <div class="commentsINput_2">
+        <p>First Comment Text</p>
+        <input id="FirstCommentTextDis" type="text" placeholder="I like Kunal. Thanks for sharing" />
+      </div>
+    </div>
+    <div class="commentsMAIN">
+      <div class="commentsINput_1">
+        <p>Second Comment Username</p>
+        <input id="SecondCommentUsername" type="text" placeholder="Satyam" />
+      </div>
+      <div class="commentsINput_2">
+        <p>Second Comment Text</p>
+        <input id="SecondCommentTextDis" type="text" placeholder="hii" />
+      </div>
+    </div>
+  </div>
+  <!-- ==============================comments============================== -->
+  <!-- ==============================Time============================== -->
+  <div class="Time">
+    <h1>Post Time</h1>
+    <div class="TimeInput">
+      <p>Post Time</p>
+      <input id="postTime" type="text" placeholder="Enter post Time" />
+    </div>
+  </div>
+  <!-- ==============================Time============================== -->
+  <button onclick="exportImg()">Export instagram post ></button>
+</body>
+<script>
+
+  function exportImg() {
+    var post = document.querySelectorAll(".section_No1")[0]
+    var body = document.querySelectorAll("body")[0]
+    console.log(post.innerHTML);
+    body.innerHTML = post.innerHTML
+    setTimeout(() => {
+      window.print()
+    }, 1000);
+  }
+
+  // ==============================PostBody ++To++ post============================
+
+  var porfileNamep = document.querySelectorAll(".porfileName p");
+  var Username = document.querySelectorAll("#Username");
+  Username[0].addEventListener("change", function UsernameF(params) {
+    porfileNamep[0].innerHTML = Username[0].value;
+  });
+
+  var porfileNamespan = document.querySelectorAll(".porfileName span");
+  // console.log(porfileNamespan[0].innerHTML);
+  var DesIinput = document.querySelectorAll("#DesIinput");
+  // console.log(DesIinput[0].value);
+  DesIinput[0].addEventListener("change", function DesIinputF(params) {
+    porfileNamespan[0].innerHTML = DesIinput[0].value;
+  });
+
+  // ==============================Image-Not-done==========================
+
+
+
+  var porfileimg = document.querySelectorAll(".porfile img");
+  // console.log(porfileimg[0]);
+
+  var AvatarImg = document.querySelectorAll("#file1");
+
+  AvatarImg[0].addEventListener("change", function file1F() {
+    var reader = new FileReader();
+    reader.readAsDataURL(AvatarImg[0].files[0])
+    reader.onload = (e) => {
+      if (e.target.result.includes("image")) {
+        porfileimg[0].src = e.target.result
+      } else {
+        alert("you select wrong file type")
+      }
+    }
+  });
+
+
+  var centerImg = document.querySelectorAll("#centerImg img")
+  // console.log(centerImg[0]);
+
+  var AvatarImg2 = document.querySelectorAll("#file2")
+
+  // console.log(AvatarImg2);
+
+  AvatarImg2[0].addEventListener("change", function AvatarImg2F() {
+    var reader = new FileReader();
+    reader.readAsDataURL(AvatarImg2[0].files[0])
+    reader.onload = (i) => {
+      if (i.target.result.includes("image")) {
+        centerImg[0].src = i.target.result
+      } else {
+        alert("you select wrong file type")
+      }
+    }
+  })
+
+  // ==============================Image-Not-done==========================
+
+  var discription_name = document.querySelectorAll(".discription_name");
+  // console.log(discription_name[0].innerHTML);
+  var DescriptionOnPost = document.querySelectorAll("#DescriptionOnPost");
+  // console.log(DescriptionOnPost[0].value);
+  DescriptionOnPost[0].addEventListener(
+    "change",
+    function DescriptionOnPostF(params) {
+      discription_name[0].innerHTML = DescriptionOnPost[0].value;
+    }
+  );
+  // ==============================PostBody ++To++ post============================
+
+  // ==============================Stats & States ++To++ post============================
+
+  var likesSpan = document.querySelectorAll(".likes span");
+  // console.log(likesSpan[0].innerHTML);
+
+  var LikesCount = document.querySelectorAll("#LikesCount");
+  // console.log(LikesCount[0].value);
+
+  LikesCount[0].addEventListener("change", function LikesCountF(params) {
+    likesSpan[0].innerHTML = LikesCount[0].value
+  })
+
+
+  var Comment_ViewP = document.querySelectorAll(".Comment_View p")
+  console.log(Comment_ViewP[0].innerHTML);
+  var CommentCount = document.querySelectorAll("#CommentCount")
+  // console.log(CommentCount[0].value);
+  CommentCount[0].addEventListener("change", function Comment_ViewPF(params) {
+    Comment_ViewP[0].innerHTML = CommentCount[0].value
+  })
+
+  // ==============================Stats & States ++To++ post============================
+
+  // ==============================Comments ++To++ post============================
+
+  var Comment_1_namep = document.querySelectorAll(".Comment_1_name p");
+  // console.log(Comment_1_namep[0].innerHTML);
+  var FirstCommentUsername = document.querySelectorAll(
+    "#FirstCommentUsername"
+  );
+  // console.log(FirstCommentUsername[0].value);
+  FirstCommentUsername[0].addEventListener(
+    "change",
+    function Comment_1_namepF(params) {
+      Comment_1_namep[0].innerHTML = FirstCommentUsername[0].value;
+    }
+  );
+
+  var Comment_1_namespan = document.querySelectorAll(".Comment_1_name span");
+  // console.log(Comment_1_namespan[0].innerHTML);
+  var FirstCommentTextDis = document.querySelectorAll("#FirstCommentTextDis");
+  // console.log(FirstCommentTextDis[0].value);
+  FirstCommentTextDis[0].addEventListener(
+    "change",
+    function FirstCommentTextDisF(params) {
+      Comment_1_namespan[0].innerHTML = FirstCommentTextDis[0].value;
+    }
+  );
+
+  var Comment_2_namep = document.querySelectorAll(".Comment_2_name p");
+  // console.log(Comment_2_namep[0].innerHTML);
+  var SecondCommentUsername = document.querySelectorAll(
+    "#SecondCommentUsername"
+  );
+  // console.log(SecondCommentUsername[0].value);
+  SecondCommentUsername[0].addEventListener(
+    "change",
+    function SecondCommentUsernameF(params) {
+      Comment_2_namep[0].innerHTML = SecondCommentUsername[0].value;
+    }
+  );
+
+  var Comment_2_namespan = document.querySelectorAll(".Comment_2_name span");
+  // console.log(Comment_2_namespan[0].innerHTML);
+  var SecondCommentTextDis = document.querySelectorAll(
+    "#SecondCommentTextDis"
+  );
+  console.log(SecondCommentTextDis[0].value);
+  SecondCommentTextDis[0].addEventListener(
+    "change",
+    function SecondCommentTextDisF(params) {
+      Comment_2_namespan[0].innerHTML = SecondCommentTextDis[0].value;
+    }
+  );
+
+  // ==============================Comments ++To++ post============================
+
+  var timesecp = document.querySelectorAll(".timesec p");
+  // console.log(timesecp[0].innerHTML);
+  var postTime = document.querySelectorAll("#postTime");
+  // console.log(postTime[0].value);
+  postTime[0].addEventListener("change", function postTimeF(params) {
+    timesecp[0].innerHTML = postTime[0].value;
+  });
+</script>
+
+</html>
